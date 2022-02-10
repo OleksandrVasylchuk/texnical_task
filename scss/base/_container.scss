@@ -1,0 +1,22 @@
+.container {
+  box-sizing: border-box;
+  padding: 0 27px;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+    max-width: 1440px;
+    padding: 0 49px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+    max-width: 1440px;
+    padding: 0 49px;
+  }
+}

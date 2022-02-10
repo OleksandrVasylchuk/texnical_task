@@ -1,0 +1,14 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+        <symbol id="icon-polygon" viewBox="0 0 51 32">
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.3333" d="M1.815 3.792l25.92 24.069"></path>
+            <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="5.3333" d="M24.995 29.142l23.457-26.476"></path>
+        </symbol>
+        <symbol id="icon-Star" viewBox="0 0 34 32">
+            <path  d="M17.143 0l3.849 11.845h12.455l-10.076 7.321 3.849 11.845-10.076-7.321-10.076 7.321 3.849-11.845-10.076-7.321h12.455l3.849-11.845z" stroke="#ff8800" stroke-linejoin="bevel"></path>
+        </symbol>
+        <symbol id="icon-Arrow-2" viewBox="0 0 32 32">
+            <path fill="#fff" style="fill: var(--color1, #fff)" d="M14.581 30.965c0.824 0.82 2.157 0.817 2.977-0.007l13.367-13.429c0.82-0.824 0.817-2.157-0.007-2.977s-2.157-0.817-2.977 0.007l-11.882 11.937-11.937-11.882c-0.824-0.82-2.157-0.817-2.977 0.007s-0.817 2.157 0.007 2.977l13.429 13.367zM13.895 0.847l0.066 28.631 4.211-0.010-0.066-28.631-4.211 0.010z"></path>
+        </symbol>
+    </defs>
+</svg>
