@@ -1,16 +1,14 @@
 .burger-menu_button {
   position: relative;
   position: absolute;
-  top: 0;
-  right: 27px;
+  top: 16px;
+  right: 18px;
   z-index: 999999;
-  width: 60px;
-  height: 60px;
+  width: 24px;
+  height: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 100px 100px 100px 0px;
   transform: rotate(179.88deg);
-  background-color: var(--accent-color);
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -21,9 +19,9 @@
 .burger-menu_lines::after,
 .burger-menu_lines {
   position: absolute;
-  width: 34px;
-  height: 3.67px;
-  background-color: #ffffff;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-white-color);
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -34,18 +32,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 21;
+  background-color: var(--accent-color);
 }
 .burger-menu_lines::before {
   content: "";
   top: -5.5px;
   left: 0;
-  height: 3.67px;
+  height: 2px;
+  background-color: var(--accent-color);
 }
 .burger-menu_lines::after {
   content: "";
-  top: 5.5px;
+  top: 5px;
   left: 0;
-  height: 3.67px;
+  height: 2px;
+  background-color: var(--accent-color);
 }
 
 .burger-menu_active .burger-menu_lines {
@@ -54,10 +55,12 @@
 .burger-menu_active .burger-menu_lines::before {
   top: 0;
   transform: rotate(45deg);
+  background-color: var(--primary-white-color);
 }
 .burger-menu_active .burger-menu_lines::after {
   top: 0;
   transform: rotate(-45deg);
+  background-color: var(--primary-white-color);
 }
 
 .burger-menu_nav {
@@ -85,7 +88,7 @@
   ul {
     position: absolute;
     top: 380px;
-    right: 500px;
+    right: 552px;
     transform: rotate(179.88deg);
   }
   &::-webkit-scrollbar {

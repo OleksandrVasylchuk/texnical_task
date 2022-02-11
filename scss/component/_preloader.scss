@@ -6,7 +6,11 @@
   bottom: 0;
   overflow: hidden;
   /* фоновый цвет */
-  background-image: linear-gradient(15deg, #98c3e8 0%, #316099 100%);
+  background-image: linear-gradient(
+    15deg,
+    #98c3e8 0%,
+    var(--accent-color) 100%
+  );
   color: var(--primary-white-color);
   z-index: 10000;
 }

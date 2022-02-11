@@ -4,9 +4,10 @@
 @import "./component/header";
 @import "./component/preloader";
 @import "./component/burger";
+@import "./component/footer";
 
-@import "./layout/first-section";
-@import "./layout/second-section";
-@import "./layout/last-section";
+@import "./layout/hero";
+@import "./layout/cards";
+@import "./layout/prefooter";
 
 @import "utilc/_variables.scss";

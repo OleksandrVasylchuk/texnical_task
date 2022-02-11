@@ -18,7 +18,7 @@
   <body>
     <header class="container">
       <nav>
-        <img src="./img/logo.webp" alt="logo" />
+        <a href="/"><img class="logo" src="./img/logo.webp" alt="logo" /></a>
         <div id="nav__burger-menu" class="nav__burger-menu">
           <div class="burger-menu_button">
             <span class="burger-menu_lines"></span>
@@ -51,125 +51,179 @@
       </section>
       <section class="cards">
         <div class="cards__container">
-          <h1 class="cards__container-title"></h1>
+          <h2 class="cards__container-title">
+            What we do to help our client grow in digital era?
+          </h2>
           <div class="cards__container-card">
-            <img src="" alt="" class="card__img" />
-            <h3 class="card__title"></h3>
-            <p class="card__text"></p>
+            <img
+              src="./img/icon.webp"
+              alt="icon"
+              class="card__img img__bring"
+            />
+            <h3 class="card__title">Bring Technology <br />To Your</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="card__button">
-              <a href="" class="card__link"></a>
+              <a href="" class="card__link">Learn more</a>
               <svg class="kard__svg">
-                <use></use>
+                <use xlink:href="./svg/sprite.svg#icon-Arrow-link"></use>
               </svg>
             </div>
           </div>
+
           <div class="cards__container-card">
-            <img src="" alt="" class="card__img" />
-            <h3 class="card__title"></h3>
-            <p class="card__text"></p>
+            <img src="./img/men.webp" alt="men" class="card__img img__make" />
+            <h3 class="card__title">
+              Make Your business <br />
+              To Be Better Famous
+            </h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="card__button">
-              <a href="" class="card__link"></a>
+              <a href="" class="card__link">Learn more</a>
               <svg class="kard__svg">
-                <use></use>
+                <use xlink:href="./svg/sprite.svg#icon-Arrow-link"></use>
               </svg>
             </div>
           </div>
-          <div class="cards__container-card">
-            <img src="" alt="" class="card__img" />
-            <h3 class="card__title"></h3>
-            <p class="card__text"></p>
+
+          <div class="cards__container-card card__build">
+            <img
+              src="./img/women.webp"
+              alt="women"
+              class="card__img img__build"
+            />
+            <h3 class="card__title">
+              Build Your Digital Product <br />
+              That Suitable
+            </h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="card__button">
-              <a href="" class="card__link"></a>
+              <a href="" class="card__link">Learn more</a>
               <svg class="kard__svg">
-                <use></use>
+                <use xlink:href="./svg/sprite.svg#icon-Arrow-link"></use>
               </svg>
             </div>
           </div>
         </div>
+
         <form class="cards__forma" action="" method="post">
           <h2 class="cards__forma-title">registration</h2>
           <div class="cards__forma-container">
-            <input
-              class="container__input"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Your name"
-            />
-            <input
-              class="container__input"
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Your surname"
-            />
-            <input
-              class="container__input"
-              type="tel"
-              name="phone"
-              id="phone"
-              pattern="+38[0-9]{3}[0-9]{3}[0-9]{4}"
-              placeholder="+38 ___ ___ __ __"
-              required
-            />
-            <small>*Use only numbers</small>
-            <input
-              class="container__input"
-              type="email"
-              id="email"
-              multiple
-              minlength="3"
-              maxlength="64"
-              pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-              placeholder="email@email.com"
-              required
-            />
-            <small>*Use only latin letters and characters ._-@</small>
+            <label for="">
+              Name
+              <input
+                class="container__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+              />
+            </label>
+            <label for="">
+              Surname
+              <input
+                class="container__input"
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Your surname"
+              />
+            </label>
+            <label for="">
+              Phone number
+              <input
+                class="container__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="+38[0-9]{3}[0-9]{3}[0-9]{4}"
+                placeholder="+38 ___ ___ __ __"
+                required
+              />
+              <small>*Use only numbers</small>
+            </label>
+            <label for=""
+              >Email
+              <input
+                class="container__input"
+                type="email"
+                id="email"
+                multiple
+                minlength="3"
+                maxlength="64"
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                placeholder="email@email.com"
+                required
+              />
+              <small>*Use only latin letters and characters ._-@</small>
+            </label>
           </div>
-          <p class="cards__forma__cheskbox">
+          <div class="cards__forma__cheskbox">
             <input class="option-input checkbox" id="one" type="checkbox" />
             <label for="one">
               <span></span>
-              I agree with The Terms of Use and with The Privacy Policy
+              <p>I agree with The Terms of Use and with The Privacy Policy</p>
             </label>
-          </p>
+          </div>
           <button type="submit" class="cards__forma-button">
             <span class="button__text">Register me!</span>
           </button>
         </form>
-        <section class="prefooter container">
-          <h2 class="prefooter__title"></h2>
-          <p class="prefooter__text"></p>
-          <a href="" class="prefooter__link"></a>
+        <section class="prefooter">
+          <div class="container">
+            <h2 class="prefooter__title">Intersted to work with our team?</h2>
+            <p class="prefooter__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <a href="" class="prefooter__link"><span>Let’s Talk</span></a>
+          </div>
         </section>
       </section>
     </main>
-    <footer class="footer container">
-      <img src="" alt="" class="footer__logo" />
-      <ul class="footer__info">
-        <li class="info__list">
-          A. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </li>
-        <li class="info__list">T. +38 091 234 56 78</li>
-        <li class="info__list">E. hello.ira@gmail.com</li>
-      </ul>
-      <div class="footer__about">
-        <h2 class="about__titleul">About US</h2>
-        <ul>
-          <li class="about__list">About</li>
-          <li class="about__list">What We Do</li>
-          <li class="about__list">Project</li>
-          <li class="about__list">How It Work With Us</li>
+    <footer class="footer">
+      <div class="container">
+        <img
+          src="./img/logo-footer.webp"
+          alt="logo-footer"
+          class="footer__logo"
+        />
+        <ul class="footer__info">
+          <li class="info__list">
+            <span>A.</span> Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit.
+          </li>
+          <li class="info__list"><span>T.</span> +38 091 234 56 78</li>
+          <li class="info__list"><span>E.</span> hello.ira@gmail.com</li>
         </ul>
-      </div>
-      <div class="footer__follow">
-        <h2 class="follow __titleul">Follow</h2>
-        <ul>
-          <li class="follow __list">Instagram</li>
-          <li class="follow __list">Facebook</li>
-          <li class="follow __list">LinkedIn</li>
-          <li class="follow __list">Youtube</li>
-        </ul>
+        <div class="footer__about">
+          <h2 class="about__title">About US</h2>
+          <ul>
+            <li class="about__list"><a href="#">About</a></li>
+            <li class="about__list"><a href="#">What We Do</a></li>
+            <li class="about__list"><a href="#">Project</a></li>
+            <li class="about__list"><a href="#">How It Work With Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__follow">
+          <h2 class="follow__title">Follow</h2>
+          <ul>
+            <li class="follow__list"><a href="#">Instagram</a></li>
+            <li class="follow__list"><a href="#">Facebook</a></li>
+            <li class="follow__list"><a href="#">LinkedIn</a></li>
+            <li class="follow__list"><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="footer__legal">2019 © All rights reserved.</p>
       </div>
     </footer>
     <div class="preloader">
