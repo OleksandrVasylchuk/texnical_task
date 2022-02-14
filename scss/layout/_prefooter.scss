@@ -40,4 +40,48 @@
   background: var(--button-color);
   border-radius: 10px;
   color: var(--primary-white-color);
+  &:hover {
+    background: #4799e3;
+  }
+  &:focus {
+    background: #4088c9;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .prefooter {
+    padding: 91px 0 63px;
+  }
+  .prefooter__title {
+    width: 306px;
+    margin: 0 0 38px;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+  }
+  .prefooter__text {
+    margin-bottom: 71px;
+    width: 460px;
+  }
+  .prefooter__link {
+  }
+}
+@media screen and (min-width: 1140px) {
+  .prefooter {
+    padding-bottom: 45px;
+    .container {
+      display: flex;
+    }
+  }
+
+  .prefooter__title {
+    margin-bottom: 14px;
+  }
+  .prefooter__text {
+    margin: 0;
+  }
+  .prefooter__link {
+    margin-left: 110px;
+    margin-top: 110px;
+  }
 }

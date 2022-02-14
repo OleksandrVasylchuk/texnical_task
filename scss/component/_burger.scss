@@ -122,34 +122,8 @@
     color: #fff;
   }
 }
-
-// .burger-menu_overlay {
-//   display: none;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   z-index: 21;
-// }
-
-@media screen and (min-width: 1200px) {
-  .nav__burger-menu {
-    top: 0;
-    right: 0;
-  }
+@media screen and (min-width: 1140px) {
   .burger-menu_button {
-    top: 0;
-    right: 49px;
-  }
-  .burger-menu_active .burger-menu_nav {
-    width: 1580px;
-    height: 1580px;
-  }
-  .burger-menu_lines {
-  }
-  .burger-menu_nav {
-  }
-  .burger-menu_link {
+    right: 0;
   }
 }

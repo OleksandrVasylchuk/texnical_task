@@ -1,11 +1,14 @@
+// @import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
 body {
   margin: 0;
   box-sizing: border-box;
   font-family: "SF Pro Display, sans-serif;";
+  // font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
-  overflow-y: visible;
-  height: 100%;
+  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {

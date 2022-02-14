@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test-task</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -35,22 +36,24 @@
       </nav>
     </header>
     <main>
-      <section class="hero container">
-        <div>
-          <h1 class="hero__title">HELLO WORLD ! My name is Ira</h1>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-            tristique vulputate ultrices ut mauris tellus at. Posuere
-            sollicitudin odio tellus elit.
-          </p>
-          <a class="hero__button">
-            <p class="hero__button-text">See Our Project</p>
-          </a>
+      <section class="hero">
+        <div class="container">
+          <div>
+            <h1 class="hero__title">HELLO WORLD ! My name is Ira</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              tristique vulputate ultrices ut mauris tellus at. Posuere
+              sollicitudin odio tellus elit.
+            </p>
+            <a class="hero__button">
+              <p class="hero__button-text">See Our Project</p>
+            </a>
+          </div>
+          <div class="hero__image"></div>
         </div>
-        <div class="hero__image"></div>
       </section>
       <section class="cards">
-        <div class="cards__container">
+        <div class="cards__container container">
           <h2 class="cards__container-title">
             What we do to help our client grow in digital era?
           </h2>
@@ -73,7 +76,7 @@
             </div>
           </div>
 
-          <div class="cards__container-card">
+          <div class="cards__container-card card__center">
             <img src="./img/men.webp" alt="men" class="card__img img__make" />
             <h3 class="card__title">
               Make Your business <br />
@@ -125,6 +128,7 @@
                 name="name"
                 id="name"
                 placeholder="Your name"
+                required
               />
             </label>
             <label for="">
@@ -135,6 +139,7 @@
                 name="surname"
                 id="surname"
                 placeholder="Your surname"
+                required
               />
             </label>
             <label for="">
@@ -177,34 +182,49 @@
             <span class="button__text">Register me!</span>
           </button>
         </form>
-        <section class="prefooter">
-          <div class="container">
+        <div class="cards__img-1"></div>
+        <div class="cards__img-2"></div>
+        <div class="cards__img-3"></div>
+        <div class="cards__img-5"></div>
+        <div class="cards__img-4"></div>
+      </section>
+      <section class="prefooter">
+        <div class="container">
+          <div>
             <h2 class="prefooter__title">Intersted to work with our team?</h2>
             <p class="prefooter__text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
-            <a href="" class="prefooter__link"><span>Let’s Talk</span></a>
           </div>
-        </section>
+          <a href="" class="prefooter__link"><span>Let’s Talk</span></a>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <img
-          src="./img/logo-footer.webp"
-          alt="logo-footer"
-          class="footer__logo"
-        />
-        <ul class="footer__info">
-          <li class="info__list">
-            <span>A.</span> Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
-          </li>
-          <li class="info__list"><span>T.</span> +38 091 234 56 78</li>
-          <li class="info__list"><span>E.</span> hello.ira@gmail.com</li>
-        </ul>
+        <div>
+          <img
+            src="./img/logo-footer.webp"
+            alt="logo-footer"
+            class="footer__logo"
+          />
+          <ul class="footer__info">
+            <li class="info__list">
+              <span>A.</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </li>
+            <li class="info__list">
+              <span>T.</span>
+              <a href="tel:+38 091 234 56 78">+38 091 234 56 78</a>
+            </li>
+            <li class="info__list">
+              <span>E.</span>
+              <a href="mailto:hello.ira@gmail.com">hello.ira@gmail.com</a>
+            </li>
+          </ul>
+        </div>
         <div class="footer__about">
           <h2 class="about__title">About US</h2>
           <ul>
@@ -223,8 +243,8 @@
             <li class="follow__list"><a href="#">Youtube</a></li>
           </ul>
         </div>
-        <p class="footer__legal">2019 © All rights reserved.</p>
       </div>
+      <p class="footer__legal container">2021 © All rights reserved.</p>
     </footer>
     <div class="preloader">
       <svg

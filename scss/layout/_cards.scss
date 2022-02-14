@@ -1,6 +1,11 @@
 .cards {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .cards__container {
+  position: relative;
+  z-index: 3;
 }
 .cards__container-title {
   margin-top: 77px;
@@ -59,7 +64,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   color: #1f3f68;
   opacity: 0.6;
   margin: 16px 0 28px;
@@ -67,6 +72,12 @@
 .card__button {
   display: flex;
   align-items: center;
+  &:hover {
+    background: #4799e3;
+  }
+  &:focus {
+    background: #4088c9;
+  }
 }
 .card__link {
   font-style: italic;
@@ -82,6 +93,8 @@
   margin-left: 9px;
 }
 .cards__forma {
+  position: relative;
+  z-index: 3;
   box-sizing: border-box;
   width: 346px;
   height: 820px;
@@ -90,6 +103,7 @@
   background: var(--primary-white-color);
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
+  overflow-y: hidden;
 }
 .cards__forma-title {
   margin-bottom: 40px;
@@ -123,8 +137,7 @@ label {
     color: #b82e2e;
   }
 }
-.cards__forma-container {
-}
+
 .container__input {
   box-sizing: border-box;
   display: block;
@@ -158,9 +171,18 @@ label {
     box-shadow: 0px 2px 16px #a3c9f5;
     color: #333333;
   }
-  &:invalid {
+  // &:valid {
+  //   box-shadow: 0px 2px 16px #a3c9f5;
+  // }
+  // &:-moz-submit-invalid,
+  // &:-moz-ui-invalid,
+  &:focus:invalid {
     box-shadow: 0px 2px 16px #f58a8a;
   }
+  // &:invalid:required {
+  //   box-shadow: 0px 2px 16px #f58a8a;
+  // }
+
   &:invalid ~ small {
     color: #b82e2e;
   }
@@ -233,11 +255,10 @@ input[type="checkbox"]:checked + label > span {
 input[type="checkbox"]:checked + label > span:before {
   content: "";
   position: absolute;
-  top: 34%;
-  left: 27%;
-  transform: translate(-50%, -50%);
-  border-right: 3px solid var(--primary-white-color);
-  border-bottom: 3px solid var(--primary-white-color);
+  top: 33%;
+  left: 19%;
+  border-right: 4.5px solid var(--primary-white-color);
+  border-bottom: 4.5px solid var(--primary-white-color);
   transform: rotate(45deg);
   transform-origin: 0% 100%;
   animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
@@ -292,4 +313,201 @@ input[type="checkbox"]:checked + label > span:before {
   line-height: 29px;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
+}
+
+.cards__img-1 {
+  position: absolute;
+  width: 605px;
+  height: 463.76px;
+  left: calc(50% - 250px);
+  top: 350px;
+  // opacity: 0.2;
+  // transform: rotate(-169.09deg);
+  background-image: url(./../img/Ellipse-1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards__img-2 {
+  position: absolute;
+  width: 710.39px;
+  height: 515.44px;
+  left: calc(50% - 440px);
+  top: 914px;
+  background-image: url(./../img/Ellipse-2.webp);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+
+  // opacity: 0.2;
+  // transform: rotate(49.61deg);
+}
+.cards__img-3 {
+  position: absolute;
+  width: 800px;
+  height: 533px;
+  left: calc(50% - 350px);
+  bottom: 901px;
+  background-image: url(./../img/Ellipse-3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards__img-4 {
+  position: absolute;
+  width: 745px;
+  height: 469.44px;
+  left: calc(50% - 432px);
+  bottom: -79px;
+  background-image: url(./../img/Ellipse-4.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__container-title {
+    margin: 106px 0 109px 125px;
+    width: 457px;
+    font-size: 48px;
+    line-height: 140%;
+  }
+  .cards__container-card {
+    margin: 0 0 114px 125px;
+  }
+  .cards__forma {
+    padding: 56px 75px 46px;
+    width: 690px;
+    height: 100%;
+  }
+
+  .cards__forma-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cards__forma__cheskbox {
+    width: 529px;
+    height: 28px;
+    margin-top: 0;
+    padding-top: 22px;
+  }
+  input[type="checkbox"] + label p {
+    width: 100%;
+  }
+
+  .cards__forma-button {
+    width: 100%;
+  }
+
+  .cards__img-1 {
+    width: 710px;
+    height: 600px;
+    left: calc(50% - 317px);
+    top: 348px;
+    background-size: 100%;
+  }
+  .cards__img-2 {
+    width: 877px;
+    height: 631px;
+    left: calc(50% - 557px);
+    top: 1111px;
+    background-size: 100%;
+  }
+  .cards__img-3 {
+    width: 900px;
+    height: 617px;
+    left: calc(50% - 408px);
+    bottom: 551px;
+    background-size: 88%;
+  }
+  .cards__img-4 {
+    width: 821px;
+    height: 695px;
+    left: calc(50% - 638px);
+    bottom: -276px;
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 180px;
+    width: 958px;
+  }
+  .cards__container-title {
+    margin: 76px 111px 111px 0;
+    margin: 0;
+    width: 457px;
+    height: 201px;
+  }
+  .cards__container-card {
+    margin: 0 0 100px 111px;
+    width: 350px;
+    height: 525px;
+    padding: 0 33px 32px;
+  }
+  .card__center {
+    margin-top: -313px;
+    margin-left: 0;
+  }
+  .card__build {
+    margin-left: 218px;
+    .card__title {
+      margin: 0;
+    }
+  }
+
+  .card__title {
+    margin-top: 228px;
+  }
+
+  .cards__forma {
+    margin: 142px auto 156px;
+    width: 730px;
+    padding: 56px 95px 46px;
+  }
+  .cards__forma-title {
+    margin-bottom: 39px;
+  }
+
+  .cards__img-1 {
+    width: 766px;
+    height: 599px;
+    left: calc(50% - -16px);
+    top: 94px;
+    background-size: 100%;
+  }
+  .cards__img-2 {
+    width: 877px;
+    height: 631px;
+    left: calc(50% - 853px);
+    top: 547px;
+    background-size: 100%;
+  }
+  .cards__img-3 {
+    width: 936px;
+    height: 711px;
+    left: calc(50% - 130px);
+    bottom: 635px;
+    background-size: 98%;
+  }
+  .cards__img-5 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: calc(50% - 800px);
+    bottom: 524px;
+    background-image: url(./../img/Ellipse-3.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotate(173.18deg);
+  }
+  .cards__img-4 {
+    width: 821px;
+    height: 695px;
+    left: calc(50% - 638px);
+    bottom: -276px;
+    background-size: 100%;
+  }
 }
